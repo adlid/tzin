@@ -19,8 +19,9 @@ function App() {
 	return (
 		<div className="App">
 			{statusList.map((status) => {
-				return status.NAME;
+				return <p> {status.NAME}</p>;
 			})}
+			{error}
 		</div>
 	);
 }
