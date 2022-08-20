@@ -15,7 +15,7 @@ import { useAppSelector, useAppDispatch } from "../../hooks/redux";
 import { layoutSlice } from "../../store/reducers/LayoutSlice";
 import { Link } from "react-router-dom";
 import { fetchStatusList } from "../../store/reducers/ActionCreators";
-import styles from "./SideBar.module.scss";
+import "./SideBar.scss";
 interface Props {
 	/**
 	 * Injected by the documentation to work in an iframe.
@@ -84,7 +84,7 @@ function SideBar(props: Props) {
 								onClick={() => dispatch(handleDrawerToggle(isMobileOpen))}
 								disablePadding
 							>
-								<ListItemButton>
+								<ListItemButton className={"button-hover"}>
 									<ListItemText primary={status.NAME} />
 								</ListItemButton>
 							</ListItem>
