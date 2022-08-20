@@ -1,27 +1,11 @@
 import React from "react";
-import { useEffect } from "react";
-
 import "./App.css";
-import { useAppDispatch, useAppSelector } from "./hooks/redux";
-import { fetchStatusList } from "./store/reducers/ActionCreators";
+import { RoutesComponent } from "./Routes";
 
 function App() {
-	const dispatch = useAppDispatch();
-	const { statusList, isLoading, error } = useAppSelector(
-		(state) => state.statusListReducer
-	);
-
-	useEffect(() => {
-		dispatch(fetchStatusList());
-		console.log(statusList);
-	}, []);
-
 	return (
-		<div className="App">
-			{statusList.map((status) => {
-				return <p> {status.NAME}</p>;
-			})}
-			{error}
+		<div>
+			<RoutesComponent />
 		</div>
 	);
 }

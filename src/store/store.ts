@@ -1,8 +1,10 @@
 import {combineReducers, configureStore} from "@reduxjs/toolkit"
 import statusListReducer from './reducers/StatusListSlice'
+import LayoutReducer from './reducers/LayoutSlice'
 
 const rootReducer = combineReducers({
-    statusListReducer
+    statusListReducer,
+    LayoutReducer
 })
 
 

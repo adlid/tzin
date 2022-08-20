@@ -1,7 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { IStatusList } from "../../models/IStatusList";
-import { AppDispatch } from "../store";
 
 interface ResponceResult<T>{
     result: T,
