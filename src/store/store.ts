@@ -1,16 +1,20 @@
-import {combineReducers, configureStore} from "@reduxjs/toolkit"
+import {combineReducers, configureStore, getDefaultMiddleware} from "@reduxjs/toolkit"
 import statusListReducer from './reducers/StatusListSlice'
 import LayoutReducer from './reducers/LayoutSlice'
-
+import dealListReducer from './reducers/DealListSlice'
+import { dealListApi } from "../services/DealListService"
 const rootReducer = combineReducers({
     statusListReducer,
-    LayoutReducer
+    LayoutReducer,
+    dealListReducer,
+     [dealListApi.reducerPath] : dealListApi.reducer
 })
 
 
 export const setupStore = () => {
     return configureStore({
-        reducer: rootReducer
+        reducer: rootReducer,
+        middleware:(getDefaultMiddleware) => getDefaultMiddleware().concat(dealListApi.middleware)
     })
 }
 

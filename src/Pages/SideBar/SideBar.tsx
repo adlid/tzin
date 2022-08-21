@@ -17,18 +17,8 @@ import { Link } from "react-router-dom";
 import { fetchStatusList } from "../../store/reducers/ActionCreators";
 import "./SideBar.scss";
 interface Props {
-	/**
-	 * Injected by the documentation to work in an iframe.
-	 * You won't need it on your project.
-	 */
 	window?: () => Window;
 	drawerWidth: number;
-}
-
-interface MenuList {
-	menuName: string;
-	menuLink: string;
-	menuIcon: any;
 }
 
 function SideBar(props: Props) {
