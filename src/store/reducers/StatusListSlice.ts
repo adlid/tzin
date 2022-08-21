@@ -19,7 +19,9 @@ const initialState : StatusListState = {
 export const statusListSlice = createSlice({
     name:'statusList',
      initialState:initialState,
-     reducers:{},
+     reducers:{
+         
+     },
      extraReducers:{
          [fetchStatusList.fulfilled.type] : (state, action: PayloadAction<IStatusList[]>) => {
             state.isLoading = false;

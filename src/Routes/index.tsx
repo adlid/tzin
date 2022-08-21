@@ -8,15 +8,15 @@ import { MainLayout } from "../Layout/MainLayout";
 import Home from "../Pages/Home/Home";
 import NewDeal from "../Pages/NewDeal/NewDeal";
 import { fetchStatusList } from "../store/reducers/ActionCreators";
+import { statusListSlice } from "../store/reducers/StatusListSlice";
 
 export const RoutesComponent: React.FC = () => {
 	const dispatch = useAppDispatch();
+
 	const { statusList, error, isLoading } = useAppSelector(
 		(state) => state.statusListReducer
 	);
-	useEffect(() => {
-		dispatch(fetchStatusList());
-	}, [dispatch]);
+
 	return (
 		<BrowserRouter>
 			<Routes>
