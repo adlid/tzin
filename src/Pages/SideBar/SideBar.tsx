@@ -28,15 +28,16 @@ function SideBar(props: Props) {
 	const { statusList, error, isLoading } = useAppSelector(
 		(state) => state.statusListReducer
 	);
+    useEffect(() => {
+		dispatch(fetchStatusList());
+	}, [dispatch]);
 	const { isMobileOpen } = useAppSelector((state) => state.LayoutReducer);
 	const { handleDrawerToggle } = layoutSlice.actions;
 
 	const container =
 		window !== undefined ? () => window().document.body : undefined;
 
-	useEffect(() => {
-		dispatch(fetchStatusList());
-	}, [dispatch]);
+	
 
 	const drawer = (
 		<div>
@@ -91,7 +92,7 @@ function SideBar(props: Props) {
 				open={isMobileOpen}
 				onClose={() => dispatch(handleDrawerToggle(isMobileOpen))}
 				ModalProps={{
-					keepMounted: true, // Better open performance on mobile.
+					keepMounted: true, 
 				}}
 				sx={{
 					display: { xs: "block", sm: "none" },
