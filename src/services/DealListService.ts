@@ -2,21 +2,7 @@
 
  import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/dist/query/react'
 import { IDealList } from '../models/IDealList'
-
-interface ResponceResult<T>{
-    result: T,
-    total:number,
-    time:{
-        start: number
-        finish: number
-        duration: number
-        processing: number
-        date_start: string
-        date_finish: string
-        operating_reset_at: number
-        operating: number
-    }
-}
+import { ResponceResult } from '../models/IResponseResult'
 
  export const dealListApi = createApi({
     reducerPath: 'dealList',
