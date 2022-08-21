@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.109bb03e.css","mappings":"AAAA,cACC,WAGA,0BACC,mCACA","sources":["Pages/SideBar/SideBar.scss"],"sourcesContent":[".button-hover {\n\twidth: 40px;\n}\n.MuiButtonBase-root {\n\t&:hover {\n\t\tbackground-color: #ffc761 !important;\n\t\tcolor: #000000;\n\t}\n}\n"],"names":[],"sourceRoot":""}
