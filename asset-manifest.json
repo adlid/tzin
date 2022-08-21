@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/tzin/static/css/main.109bb03e.css",
-    "main.js": "/tzin/static/js/main.08ac7cad.js",
-    "static/media/162-1622413_4chan-404-pages-hd-png-download.png": "/tzin/static/media/162-1622413_4chan-404-pages-hd-png-download.a018f9684bc9e02e92f0.png",
-    "index.html": "/tzin/index.html",
-    "main.109bb03e.css.map": "/tzin/static/css/main.109bb03e.css.map",
-    "main.08ac7cad.js.map": "/tzin/static/js/main.08ac7cad.js.map"
+    "main.css": "/tzin/tree/master/static/css/main.109bb03e.css",
+    "main.js": "/tzin/tree/master/static/js/main.3c151157.js",
+    "static/media/162-1622413_4chan-404-pages-hd-png-download.png": "/tzin/tree/master/static/media/162-1622413_4chan-404-pages-hd-png-download.a018f9684bc9e02e92f0.png",
+    "index.html": "/tzin/tree/master/index.html",
+    "main.109bb03e.css.map": "/tzin/tree/master/static/css/main.109bb03e.css.map",
+    "main.3c151157.js.map": "/tzin/tree/master/static/js/main.3c151157.js.map"
   },
   "entrypoints": [
     "static/css/main.109bb03e.css",
-    "static/js/main.08ac7cad.js"
+    "static/js/main.3c151157.js"
   ]
 }
