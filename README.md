@@ -18,3 +18,5 @@ You will also see any lint errors in the console.
 Redux, redux-toolkit, rtk-query, scss, dayjs, typeScript, react-dom, react-router-dom, mui/material
 
 Исрользвал для для одного запроса crm.status.list redux-toolkit, для запроса crm.deal.list использовал rtk-query так как не было ендпоинтов для отдельного меню айтема, если обычно использвать гет запрос то при каждом клике на меню айтем срабатывало бы запрос, с помощью rtk-query кэшировал данных.
+
+crm.productrow.list метод не работало сделал то что доступно по ресту
